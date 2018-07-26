@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+time
+
+	</title>
+	 
+</head>
+<script type="text/javascript">
+
+	 
+// d = new Date();
+ //d.setSeconds(d.getSeconds() - 10);
+
+	function abc(){ 
+			e = new Date();
+
+var a = new Date("2018-07-25T09:47:10.596Z");
+ 
+ 
+
+/*e.getFullYear();*/
+
+if(a.getFullYear()<=e.getFullYear())
+{
+	if(a.getMonth()<=e.getMonth())
+	{
+		if(a.getDate()<=e.getDate())
+		{
+			if(a.getHours()<=e.getHours())
+			{
+				if(a.getMinutes()<=e.getMinutes())
+				{
+					if(a.getSeconds()<=e.getSeconds())
+					{					
+
+						console.log('hello');
+						console.log("currrent"+e.toISOString());
+
+					}else{
+					console.log("currrent seconds"+e.getSeconds());
+					console.log("currrent"+e.toISOString());
+					}
+				}else{
+				console.log("currrent minute"+e.getMinutes());
+				console.log("currrent"+e.toISOString());
+				}
+			}else{
+			console.log("currrent hours"+e.getHours());
+			console.log("currrent"+e.toISOString());
+			}
+		}else{
+		console.log("currrent day"+e.getDate());
+		console.log("currrent"+e.toISOString());
+		} 
+	}else{
+		console.log("currrent month"+e.getMonth());
+		console.log("currrent"+e.toISOString());
+	}
+}else{
+	console.log("currrent year"+e.getFullYear());
+	console.log("currrent"+e.toISOString());
+}
+
+
+
+
+
+
+
+
+/*if(a.getHours() <=e.getHours()){
+	console.log('condition matched for hours');
+}*/
+ 
+
+
+/*console.log("iso 1:"+e.toISOString());
+console.log("iso 2:"+a);*/
+/* console.log("current second:"+e);*/
+
+
+
+ 
+ 
+ //d.setSeconds(d.getSeconds() + 10);
+
+		setTimeout(function(){
+						abc();
+			},1000);
+
+	
+ 
+
+
+ }
+ 
+</script>
+<body>
+ 
+<button onclick="abc()">check</button>
+</body>
+</html>
